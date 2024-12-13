@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Difference Calculator</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.js">
+</head>
+<body>
+    <div class="container">
+        <h1>Date Difference Calculator</h1>
+    </div>
+
+    <form id="dateDiffForm">
+        <div class="form-group">
+            <label for="date1">First date:</label>
+            <input type="text" id="date1"
+            placeholder="YYYY-MM-DD"
+            required
+            pattern="\d{4}-\d{2}-\d{2}">
+            <span class="error" id="date1Error"></span>
+        </div>
+    </form>
+
+    <form id="dateDiffForm">
+        <div class="form-group">
+            <label for="date2">second date:</label>
+            <input type="text" id="date1"
+            placeholder="YYYY-MM-DD"
+            required
+            pattern="\d{4}-\d{2}-\d{2}">
+            <span class="error" id="date2Error"></span>
+        </div>
+    </form>
+
+
+    <div class="form-action">
+        <button type="submit" id="CalculateBtn"Calculate Difference</button>
+            <button type="submit" id="CalculateBtn"Calculate Difference</button>
+    </div>
+</form>
+
+<div class="form-actions">
+    <button type="submit" id="calculateBtn">Calculate Difference</button>
+    <button type="reset" id="resetBtn">Reset</button>
+</div>
+</form>
+
+<div id="loadingSpinner" class="spinner" style="display: none;">
+Processing...
+</div>
+
+<div id="resultContainer"></div>
+<div id="historyContainer">
+<h3>Previous Calculations</h3>
+<ul id="calculationHistory"></ul>
+</div>
+</div>
+
+<script src="date-calculator.js"></script>
+</body>
+</html>
